@@ -75,8 +75,9 @@ int printTree(treePosition root){
         return 0;
     }
     printTree(root->left);
-    printf("\t %s broj ponavljanja: %d\n",root->word,root->wordCounter);
+    printf("\t %s broj ponavljanja--- %d\n",root->word,root->wordCounter);
     printTree(root->right);
+
     return 0;
 }
 
@@ -178,7 +179,7 @@ treePosition binaryTreeInsert(treePosition root,char* buffer){
     if(strcmp(root->word,buffer)==0){
         root->wordCounter++;
     }
-    else if(strcmp(root->word,buffer)>0){
+    else if(strcmp(root->word,buffer)<0){
         root->right=binaryTreeInsert(root->right,buffer);
     }
     else{
