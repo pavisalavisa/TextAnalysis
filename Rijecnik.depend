@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1518268700 source:d:\faks\iii. semestar\strukture podataka\rijecnik\rijecnik\source.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
